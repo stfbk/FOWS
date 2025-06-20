@@ -121,7 +121,7 @@ def main():
     # breakpoint()
 
     if args.train_dataset == 'fows_occ':
-        train_dir = './dataset/fows_occ/training/'
+        train_dir = './dataset/fows_occlusion/training/'
         # test_dir = '/media/data/rz_dataset/users_face_occlusion/testing/'
         # args.data_aug = ''
         
