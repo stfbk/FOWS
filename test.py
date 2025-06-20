@@ -99,7 +99,7 @@ def main():
     print("args.tl: ", args.tl)
     print("args.ft: ", args.ft)
     print("args.load_baseline: ", args.load_baseline)
-    # print("args.gen: ", args.gen)
+    # print(": ", )
 
     print("thresh: ", args.thresh)
     # 
@@ -244,7 +244,7 @@ def main():
         log.info(f"Evaluation results of the {args.model}_{args.train_dataset} model on the {args.test_dataset} dataset with thresh {args.thresh}")
         log.info(f"Dataset test dir: {test_dir}")
         log.info(f"Model weights: {model_path}")
-        log.info(f"FT: {args.ft}, TL: {args.tl}, GEN: {args.gen}")
+        log.info(f"FT: {args.ft}, TL: {args.tl}") #, GEN: {args.gen}")
         log.info(f"Dataset labels: {dataset_labes}")
         log.info(f"Data augmentation: {args.data_aug}")
         log.info(f"Test Accuracy: {test_accuracy:.4f}")
