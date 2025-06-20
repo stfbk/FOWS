@@ -18,7 +18,7 @@ def create_logger(log_path):
     # Create log directory if it does not exist
     if os.path.isdir(os.path.dirname(log_path)):
         log_path = check_if_log_file_exists(log_path)
-        print(log_path)
+        # print(log_path)
         os.makedirs(os.path.dirname(log_path), exist_ok=True)
 
     else:
@@ -40,9 +40,9 @@ def create_logger(log_path):
     # Add the file handler to the logger (write to file)
     logger.addHandler(fh) 
     # Ensure no stream handler is added to the logger (do not print to console)
-    for handler in logger.handlers:
-        if isinstance(handler, logging.StreamHandler):
-            logger.removeHandler(handler)
+    # for handler in logger.handlers:
+    #     if isinstance(handler, logging.StreamHandler):
+    #         logger.removeHandler(handler)
 
     return logger
 
@@ -50,13 +50,13 @@ def check_if_log_file_exists(log_path):
     # Check if the log file already exists and modify the log path if necessary
         base, ext = os.path.splitext(log_path)
         # counter = 1
-        print("base: ", base)
-        print("ext: ", ext)
+        # print("base: ", base)
+        # print("ext: ", ext)
         if 'test_output_v' not in base:
             counter = 1
         else:
             counter = int(base.split('_v')[-1]) + 1
-        print("counter: ", counter)
+        # print("counter: ", counter)
         while os.path.isfile(log_path):
             if counter == 1:
                 log_path = f"{base}_v{counter}{ext}"
