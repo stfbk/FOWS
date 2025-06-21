@@ -155,11 +155,11 @@ If your research uses part of our dataset, models and code, partially or in full
 <!-- ############################## -->
 
 # TODO 
-- <input type="checkbox"> update paper link (arxiv)
+- [ ] update paper link (arxiv)
 
 - update paper citation in:
 
-    - <input type="checkbox"> project readme
+    - [ ] project readme
 
     - <input type="checkbox"> dataset form
 
