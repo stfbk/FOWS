@@ -151,4 +151,16 @@ If your research uses part of our dataset, models and code, partially or in full
         year = {2025}
     }
 ```
-### TODO: modify citation with arxiv reference!!!
+
+<!-- ############################## -->
+
+# TODO 
+- <input disabled="" type="checkbox"> update paper link (arxiv)
+
+- update paper citation in:
+
+    - <input disabled="" type="checkbox"> project readme
+
+    - <input disabled="" type="checkbox"> dataset form
+
+    - <input disabled="" type="checkbox"> dataset readme
