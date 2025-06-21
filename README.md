@@ -157,10 +157,8 @@ If your research uses part of our dataset, models and code, partially or in full
 # TODO 
 - [ ] update paper link (arxiv)
 
-- update paper citation in:
+- [ ] update paper citation in project readme
 
-    - [ ] project readme
+- [ ] update paper citation in dataset form
 
-    - <input type="checkbox"> dataset form
-
-    - <input type="checkbox"> dataset readme
+- [ ] update paper citation in dataset readme
