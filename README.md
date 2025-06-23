@@ -13,7 +13,8 @@
 <!--### Description -->
 # Spotting tell-tale visual artifacts in face swapping  videos: strengths and pitfalls of CNN detectors
 <!-- ARXIV -->   
-[![Paper](http://img.shields.io/badge/arxiv-math.co:1480.1111-B31B1B.svg)](https://arxiv.org/abs/2506.16497)
+<!-- https://github.com/zsxoff/arxiv-badge -->
+[![arXiv](https://img.shields.io/badge/arXiv-2506.16497-b31b1b.svg)](https://arxiv.org/abs/2506.16497)
 
 This is the official repository of **Spotting tell-tale visual artifacts in face swapping  videos: strengths and pitfalls of CNN detectors**, presented at [**IWBF2025**](https://www.unibw.de/iwbf2025/program/tech_program) and available on [arXiv](link2arxivPaper). -> add link to paper
 
