@@ -73,10 +73,10 @@ The code expects the dataset to be placed under the [data/](https://github.com/R
 Our FOWS dataset consists in a collection of original and manipulate videos of user performing actions that occlude portion of their face. In order to train the models, we extracted the user faces from the video and organize them in 'occluded' and 'non-occluded'. For ease of reproduction, we also made available an already preprocessed version of the FOWS dataset. You can access it by filling out this [Google form](https://forms.gle/1cpuDCo6FHZcBvwJ8).
 
 You can replicate this preprocessing by using the scripts available in the [./preprocessing/](https://github.com/RickyZi/FOWS_test/tree/main/preprocessing) folder:
-- [frames_and_faces_extraction.py](https://github.com/RickyZi/FOWS_test/blob/main/preprocessing/frames_and_faces_extraction.py) will apply mediapipe's Blaze Face detector to detect and extract the faces from the video,
+- [frames_and_faces_extraction.py](https://github.com/RickyZi/FOWS_test/blob/main/preprocessing/frame_and_faces_extraction.py) will apply mediapipe's Blaze Face detector to detect and extract the faces from the video,
 - [fows_dataset_processing.py](https://github.com/RickyZi/FOWS_test/blob/main/preprocessing/fows_dataset_processing.py) will organize the images into 'occluded' and 'non-occluded' faces. Please note that a manual revision of the results may be needed in this case.
 
-In our work we applied the same frame categorization preprocessing to the [GOTCHA dataset](https://github.com/mittalgovind/GOTCHA-Deepfakes) using the [./preprocessing/gotcha_dataset_preprocessing.py](https://github.com/RickyZi/FOWS_test/blob/main/preprocessing/gotcha_dataset_preprocessing.py) script to organize occluded and non-occluded faces. 
+In our work we applied the same frame categorization preprocessing to the [GOTCHA dataset](https://github.com/mittalgovind/GOTCHA-Deepfakes) using the [./preprocessing/gotcha_dataset_preprocessing.py](https://github.com/RickyZi/FOWS_test/blob/main/preprocessing/gotcha_dataset_processing.py) script to organize occluded and non-occluded faces. 
 
 The same preprocessing applied to our FOWS dataset can be replicated to preprocess your own videos to be tested with our pre-trained models.
 
