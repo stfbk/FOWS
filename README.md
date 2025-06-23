@@ -143,13 +143,13 @@ Example usage:
 
 # Citation
 If your research uses part of our dataset, models and code, partially or in full, please cite:
-   ``` 
+``` 
     @misc{ziglio2025fows,
       title={Spotting tell-tale visual artifacts in face swapping videos: strengths and pitfalls of CNN detectors}, 
       author={Riccardo Ziglio and Cecilia Pasquini and Silvio Ranise},
       journal = {arXiv preprint arXiv: 2506.16497},
       year={2025}, 
-}
+    }
 ```
 
 <!-- ############################## -->
