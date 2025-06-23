@@ -16,7 +16,7 @@
 <!-- https://github.com/zsxoff/arxiv-badge -->
 [![arXiv](https://img.shields.io/badge/arXiv-2506.16497-b31b1b.svg)](https://arxiv.org/abs/2506.16497)
 
-This is the official repository of **Spotting tell-tale visual artifacts in face swapping  videos: strengths and pitfalls of CNN detectors**, presented at [**IWBF2025**](https://www.unibw.de/iwbf2025/program/tech_program) and available on [arXiv](link2arxivPaper). -> add link to paper
+This is the official repository of **Spotting tell-tale visual artifacts in face swapping  videos: strengths and pitfalls of CNN detectors**, presented at [**IWBF2025**](https://www.unibw.de/iwbf2025/program/tech_program) and available on [arXiv](https://arxiv.org/abs/2506.16497).
 
 The trained models are available at the following [oneDrive folder](https://fbk-my.sharepoint.com/:u:/g/personal/rziglio_fbk_eu/EQRaaxFKzIFApj2GwHUot98BL3LuY9rlyiJgJXYFmoQm-Q?e=xeI3Hk).
 
