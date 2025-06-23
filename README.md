@@ -13,7 +13,7 @@
 <!--### Description -->
 # Spotting tell-tale visual artifacts in face swapping  videos: strengths and pitfalls of CNN detectors
 <!-- ARXIV -->   
-[![Paper](http://img.shields.io/badge/arxiv-math.co:1480.1111-B31B1B.svg)](https://www.nature.com/articles/nature14539)
+[![Paper](http://img.shields.io/badge/arxiv-math.co:1480.1111-B31B1B.svg)](https://arxiv.org/abs/2506.16497)
 
 This is the official repository of **Spotting tell-tale visual artifacts in face swapping  videos: strengths and pitfalls of CNN detectors**, presented at [**IWBF2025**](https://www.unibw.de/iwbf2025/program/tech_program) and available on [arXiv](link2arxivPaper). -> add link to paper
 
@@ -143,22 +143,12 @@ Example usage:
 # Citation
 If your research uses part of our dataset, models and code, partially or in full, please cite:
    ``` 
-    @inproceedings{ziglio2025fows,
-        author = {Ziglio, R. and Pasquini, C. and Ranise, S.},
-        title = {Spotting tell-tale visual artifacts in face swapping videos: strengths and pitfalls
-        of CNN detectors},
-        booktitle = {IEEE International Workshop on Biometrics and Forensics (IWBF))},
-        year = {2025}
-    }
+    @misc{ziglio2025spottingTellTaleVisualArtifacts,
+      title={Spotting tell-tale visual artifacts in face swapping videos: strengths and pitfalls of CNN detectors}, 
+      author={Riccardo Ziglio and Cecilia Pasquini and Silvio Ranise},
+      journal = {arXiv preprint arXiv: 2506.16497},
+      year={2025}, 
+}
 ```
 
 <!-- ############################## -->
-
-# TODO 
-- [ ] update paper link (arxiv)
-
-- [ ] update paper citation in project readme
-
-- [ ] update paper citation in dataset form
-
-- [ ] update paper citation in dataset readme
