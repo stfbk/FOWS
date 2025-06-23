@@ -57,7 +57,7 @@ We made available for **reserach purposes only** our novel FOWS dataset. You can
 
 A simple demo explainin the whole pipeline of the project is available in colab. You can use this demo to test the pre-trained model on the FOWS dataset or on your own videos.
 
-[FOWS demo notebook](https://github.com/RickyZi/FOWS_test/blob/main/notebook_demo/FOWS_demo.ipynb) <a target="_blank" href="https://drive.google.com/file/d/1HplmCvSokPsQgWg8qvovZYoCk9PakhF0/view?usp=sharing">
+[FOWS demo notebook](https://github.com/RickyZi/FOWS_test/blob/main/notebook_demo/FOWS_demo.ipynb) <a target="_blank" href="https://colab.research.google.com/drive/1HplmCvSokPsQgWg8qvovZYoCk9PakhF0">
   <img src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
 
