@@ -113,7 +113,7 @@ The code to perform inference of the trained models on a specific test_dataset i
 
 You can test a trained model on a specific dataset with the following command:
 ```
-python test.py --model mnetv2 --train_dataset fows_occ --test_dataset fows_no_occ --tl 
+python test.py --model mnetv2 --train_dataset fows_occ --test_dataset fows_no_occ --tl --tags MnetV2_fows_occ_TL_vs_fows_no_occ
 ```
 - model: name of the pre-trained model to use
 - train_dataset: the dataset used for training the model (fows_occ, fows_no_occ)
@@ -125,13 +125,14 @@ python test.py --model mnetv2 --train_dataset fows_occ --test_dataset fows_no_oc
 
 
 We also provide the code for computing GradCam activations for a given dataset in the [gradcam.py](https://github.com/RickyZi/FOWS_test/blob/main/gradcam.py) script.
+
 Example usage:
 ```
     python gradcam.py --model mnetv2 --train_dataset fows_occ --test_dataset fows_no_occ --ft --cam_method gradcam++ --num-layers 1 --tags mnetv2_fows_occ_FT_vs_fows_no_occ
 ```
 - model: name of the pre-trained model to use
-- train_dataset: dataset used when training the model
-- test_dataset: dataset used for model inference
+- train_dataset: dataset used when training the model (used to select the pre-trained model)
+- test_dataset: dataset used for computing GradCam activations (i.e. a random subset of the dataset)
 - ft (or tl): training strategy
     - ft: Fine Tuning
     - tl: Transfer Learning
