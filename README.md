@@ -11,12 +11,20 @@
 -->
 
 <!--### Description -->
-# Spotting tell-tale visual artifacts in face swapping  videos: strengths and pitfalls of CNN detectors
+<div align="center">
+    
+# Spotting Tell-Tale Visual Artifacts in Face Swapping Videos: Strengths and Pitfalls of CNN Detectors
 <!-- ARXIV -->   
 <!-- https://github.com/zsxoff/arxiv-badge -->
-[![arXiv](https://img.shields.io/badge/arXiv-2506.16497-b31b1b.svg)](https://arxiv.org/abs/2506.16497)
+<!--[![arXiv](https://img.shields.io/badge/arXiv-2506.16497-b31b1b.svg)](https://arxiv.org/abs/2506.16497) -->
+[![IEEE Paper](https://img.shields.io/badge/IEEE-Paper-blue)](https://ieeexplore.ieee.org/document/11113429)
 
-This is the official repository of **Spotting tell-tale visual artifacts in face swapping  videos: strengths and pitfalls of CNN detectors**, presented at [**IWBF2025**](https://www.unibw.de/iwbf2025/program/tech_program) and available on [arXiv](https://arxiv.org/abs/2506.16497).
+[![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white&labelColor=3776AB)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.1.2-EE4C2C?logo=pytorch&logoColor=white&labelColor=EE4C2C)](https://pytorch.org/)
+
+</div>
+
+This is the official repository of **Spotting tell-tale visual artifacts in face swapping  videos: strengths and pitfalls of CNN detectors**, presented at **IWBF2025** and available on [IEEE Xplore](https://ieeexplore.ieee.org/document/11113429).
 
 The trained models are available at the following [OneDrive folder](https://fbk-my.sharepoint.com/:u:/g/personal/rziglio_fbk_eu/EQRaaxFKzIFApj2GwHUot98BL3LuY9rlyiJgJXYFmoQm-Q?e=xeI3Hk).
 
@@ -55,11 +63,10 @@ We made available for **reserach purposes only** our novel FOWS dataset. You can
 
 <!-- If you want to test the pre-trained model on the FOWS dataset or on your own videos: -->
 
-A simple demo explainin the whole pipeline of the project is available in colab. You can use this demo to test the pre-trained model on the FOWS dataset or on your own videos.
+A simple [demo](https://github.com/stfbk/FOWS/blob/master/notebook_demo/FOWS_demo.ipynb) explaining the whole pipeline of the project is available in Colab. You can use this demo to test the pre-trained models on the FOWS dataset or on your own videos.
 
-[FOWS demo notebook](https://github.com/RickyZi/FOWS_test/blob/main/notebook_demo/FOWS_demo.ipynb) <a target="_blank" href="https://colab.research.google.com/drive/1HplmCvSokPsQgWg8qvovZYoCk9PakhF0">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg">
-</a>
+[![FOWS demo notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/stfbk/FOWS/blob/master/notebook_demo/FOWS_demo.ipynb)
+
 
 ## Dataset preprocessing
 <!-- NOTE: add link to dataset and form to download the dataset
@@ -70,7 +77,7 @@ The code expects the dataset to be placed under the [data/](https://github.com/R
 
 <!-- You need to preprocess the dataset in order to extract the faces from all videos.  -->
 
-Our FOWS dataset consists in a collection of original and manipulate videos of user performing actions that occlude portion of their face. In order to train the models, we extracted the user faces from the video and organize them in 'occluded' and 'non-occluded'. For ease of reproduction, we also made available an already preprocessed version of the FOWS dataset. You can access it by filling out this [Google form](https://forms.gle/1cpuDCo6FHZcBvwJ8).
+Our FOWS dataset consists in a collection of original and manipulate videos of user performing actions that occlude portion of their face. In order to train the models, we extracted the user faces from the video and organize them as 'occluded' and 'non-occluded'. For ease of reproduction, we also made available the preprocessed version of the FOWS dataset. You can access it by filling out this [Google form](https://forms.gle/1cpuDCo6FHZcBvwJ8).
 
 You can replicate this preprocessing by using the scripts available in the [./preprocessing/](https://github.com/RickyZi/FOWS_test/tree/main/preprocessing) folder:
 - [frames_and_faces_extraction.py](https://github.com/RickyZi/FOWS_test/blob/main/preprocessing/frame_and_faces_extraction.py) will apply mediapipe's Blaze Face detector to detect and extract the faces from the video,
@@ -145,13 +152,19 @@ Example usage:
 # Citation
 If your research uses part of our dataset, models and code, partially or in full, please cite:
 ``` 
-    @misc{ziglio2025fows,
-      title={Spotting tell-tale visual artifacts in face swapping videos: strengths and pitfalls 
-      of CNN detectors}, 
-      author={Riccardo Ziglio and Cecilia Pasquini and Silvio Ranise},
-      journal = {arXiv preprint arXiv: 2506.16497},
-      year={2025}, 
-    }
+@INPROCEEDINGS{11113429,
+  author={Ziglio, Riccardo and Pasquini, Cecilia and Ranise, Silvio},
+  booktitle={2025 13th International Workshop on Biometrics and Forensics (IWBF)}, 
+  title={Spotting Tell-Tale Visual Artifacts in Face Swapping Videos: Strengths and Pitfalls of CNN Detectors}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={01-06},
+  keywords={Biometrics;Visualization;Forensics;Soft sensors;Conferences;Detectors;Real-time systems;Data models;Faces;Videos;face swapping;face verification;remote video calls;forensic detection},
+  doi={10.1109/IWBF63717.2025.11113429}
+}
+
 ```
 
 <!-- ############################## -->
+
