@@ -28,7 +28,7 @@ This is the official repository of **Spotting tell-tale visual artifacts in face
 
 The trained models are available at the following [OneDrive folder](https://fbk-my.sharepoint.com/:u:/g/personal/rziglio_fbk_eu/EQRaaxFKzIFApj2GwHUot98BL3LuY9rlyiJgJXYFmoQm-Q?e=xeI3Hk).
 
-We made available for **reserach purposes only** our novel FOWS dataset. You can request access to our dataset by filling this [Google form](https://forms.gle/1cpuDCo6FHZcBvwJ8).
+We made available our novel FOWS dataset for **reserach purposes only**. You can request access to the FOWS dataset by filling this [Google form](https://forms.gle/1cpuDCo6FHZcBvwJ8).
 
 <!-- ############################## -->
 
@@ -167,4 +167,5 @@ If your research uses part of our dataset, models and code, partially or in full
 ```
 
 <!-- ############################## -->
+
 
