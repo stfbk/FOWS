@@ -36,6 +36,7 @@ We made available our novel FOWS dataset for **reserach purposes only**. You can
 
 ## Install requirements
 - install [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install#linux)
+<!-- might be better/easier to create a python venv? -->
 - create the 'fows' environment with python 3.10 
     ```bash
     conda create -n fows python=3.10

@@ -54,12 +54,12 @@ def face_detection(img_path, save_path):
     # gist: if face not detected, probably there is a hand / obj -> check if face detected
     if face_results.detections: # face detected
         print(f"Face detected in image {get_file_name(img_path)}")
-        cv2.imwrite(save_path + '/face/' + get_file_name(img_path) + '.jpg', img)
+        cv2.imwrite(save_path + '/no_occ/' + get_file_name(img_path) + '.jpg', img)
 
     
     else: # mp do not detect face -> there should be a hand / obj occluding the face
         print(f"NO face detected in image {get_file_name(img_path)}")
-        cv2.imwrite(save_path + '/no_face/' + get_file_name(img_path) + '.jpg', img)
+        cv2.imwrite(save_path + '/occ/' + get_file_name(img_path) + '.jpg', img)
         # move the image to the no_face subfolder
         # os.
         # shutil(save_path + '/no_face/' + get_file_name(img_path) + '.jpg', img_path)
@@ -112,8 +112,8 @@ for subdir in directories:
             challenge_name = 'hand_occlusion'
             hand_occ_path = save_path + '/hand_occlusion'
             if not os.path.exists(hand_occ_path):
-                os.makedirs(hand_occ_path + '/face')
-                os.makedirs(hand_occ_path + '/no_face')
+                os.makedirs(hand_occ_path + '/no_occ')
+                os.makedirs(hand_occ_path + '/occ')
             else:
                 print("folder already exists")
                 continue
@@ -142,8 +142,8 @@ for subdir in directories:
             challenge_name = 'obj_occlusion'
             obj_occ_path = save_path + '/obj_occlusion'
             if not os.path.exists(obj_occ_path):
-                os.makedirs(obj_occ_path + '/face')
-                os.makedirs(obj_occ_path + '/no_face')
+                os.makedirs(obj_occ_path + '/no_occ')
+                os.makedirs(obj_occ_path + '/occ')
             else:
                 print("folder already exists")
                 continue
