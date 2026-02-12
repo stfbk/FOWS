@@ -203,7 +203,18 @@ def extract_faces_from_videos_json(vid_paths, out_paths, frames_json_path):
             - vid_paths: list of video paths
             - out_paths: list of output paths where the extracted faces will be saved
             - frames_json_path: path to the json file with the index of the frames to extract (optional)
-                - the json file should have the following format:
+                - the current version of the code extracts the select frames from a json file that has the following format:
+                    {
+                        'user_id': {
+                            'challenge_id': {
+                            }
+                        }
+                    } 
+                
+                The json file should be located in the ../dataset/ folder and indicates which frames to extract from the video.
+            
+                --------------------------------------------------------------
+                @TODO: modify the code to handle json files with the following format:
                 {
                     "training": {
                         "user_id": {
@@ -214,8 +225,8 @@ def extract_faces_from_videos_json(vid_paths, out_paths, frames_json_path):
                     }
                     "testing": { **same format as training** }
                 }
-
-                -> the json file in the ../dataset/ folder will be used as reference for extracting the frames from the video
+                --------------------------------------------------------------
+                
 
         output:
             - the extracted faces are saved to the corresponding output paths
